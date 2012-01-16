@@ -84,7 +84,7 @@
   //------ Load data in pcatlas010!! ----------------------------------
 
   //period B  
-  /*
+  
  tree->Add("/4B/laugs/data11/r17/period-B/user.gotero.data11_7TeV.00177986.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106141952/*.root*");
  tree->Add("/4B/laugs/data11/r17/period-B/user.gotero.data11_7TeV.00178021.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106142325/*.root*");
  tree->Add("/4B/laugs/data11/r17/period-B/user.gotero.data11_7TeV.00178026.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106142345/*.root*");
@@ -134,7 +134,7 @@ tree->Add("/4B/laugs/data11/r17/period-F/user.gotero.data11_7TeV.00182486.physic
 tree->Add("/4B/laugs/data11/r17/period-F/user.gotero.data11_7TeV.00182518.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106145608/*.root*");
 tree->Add("/4B/laugs/data11/r17/period-F/user.gotero.data11_7TeV.00182519.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106145642/*.root*");
 
-  */
+ 
 
 
   //period G
@@ -195,7 +195,7 @@ tree->Add("/4B/laugs/data11/r17/period-I/user.gotero.data11_7TeV.00186275.physic
 tree->Add("/4B/laugs/data11/r17/period-I/user.gotero.data11_7TeV.00186361.physics_JetTauEtmiss.merge.NTUP_JETMET.r2713_p705_p766.btag.v1.111106153610/*.root*");
 tree->Add("/4B/laugs/data11/r17/period-I/user.gotero.data11_7TeV.00186396.physics_JetTauEtmiss.merge.NTUP_JETMET.r2713_p705_p766.btag.v1.111106153637/*.root*");
 tree->Add("/4B/laugs/data11/r17/period-I/user.gotero.data11_7TeV.00186456.physics_JetTauEtmiss.merge.NTUP_JETMET.r2713_p705_p766.btag.v1.111106153735/*.root*");
-/*
+
   //period J
 
 tree->Add("/4B/laugs/data11/r17/period-J/user.gotero.data11_7TeV.00186516.physics_JetTauEtmiss.merge.NTUP_JETMET.r2713_p705_p766.btag.v1.111106153844/*.root*");
@@ -278,7 +278,7 @@ tree->Add("/4B/laugs/data11/r17/period-M/user.gotero.data11_7TeV.00191376.physic
 tree->Add("/4B/laugs/data11/r17/period-M/user.gotero.data11_7TeV.00191425.physics_JetTauEtmiss.merge.NTUP_JETMET.f413_m1019_p766.btag.v1.111106164911/*.root*");
 
 
-*/
+
 
 
   cout << "Number of events = " << tree->GetEntries() << endl;
@@ -294,7 +294,7 @@ tree->Add("/4B/laugs/data11/r17/period-M/user.gotero.data11_7TeV.00191425.physic
 
   //    m_metaDataTree->Add("/4C/laugs/Data2011/user.aia.data11_7TeV.00177986.physics_JetTauEtmiss.merge.NTUP_JETMET.r2276_p516_p523_p621.SKIM.V0.111014120538/*.root*");
 
-  /*
+  
   m_metaDataTree->Add("/4B/laugs/data11/r17/period-B/user.gotero.data11_7TeV.00177986.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106141952/*.root*");
   m_metaDataTree->Add("/4B/laugs/data11/r17/period-B/user.gotero.data11_7TeV.00178021.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106142325/*.root*");
   m_metaDataTree->Add("/4B/laugs/data11/r17/period-B/user.gotero.data11_7TeV.00178026.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106142345/*.root*");
@@ -345,7 +345,7 @@ tree->Add("/4B/laugs/data11/r17/period-M/user.gotero.data11_7TeV.00191425.physic
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-F/user.gotero.data11_7TeV.00182518.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106145608/*.root*");
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-F/user.gotero.data11_7TeV.00182519.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106145642/*.root*");
 
-  */
+ 
   //period G
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-G/user.gotero.data11_7TeV.00182726.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106145706/*.root*");
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-G/user.gotero.data11_7TeV.00182747.physics_JetTauEtmiss.merge.NTUP_JETMET.r2603_p659_p766.btag.v1.111106145730/*.root*");
@@ -403,7 +403,7 @@ tree->Add("/4B/laugs/data11/r17/period-M/user.gotero.data11_7TeV.00191425.physic
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-I/user.gotero.data11_7TeV.00186361.physics_JetTauEtmiss.merge.NTUP_JETMET.r2713_p705_p766.btag.v1.111106153610/*.root*");
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-I/user.gotero.data11_7TeV.00186396.physics_JetTauEtmiss.merge.NTUP_JETMET.r2713_p705_p766.btag.v1.111106153637/*.root*");
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-I/user.gotero.data11_7TeV.00186456.physics_JetTauEtmiss.merge.NTUP_JETMET.r2713_p705_p766.btag.v1.111106153735/*.root*");
- /*
+ 
   //period J
 
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-J/user.gotero.data11_7TeV.00186516.physics_JetTauEtmiss.merge.NTUP_JETMET.r2713_p705_p766.btag.v1.111106153844/*.root*");
@@ -484,7 +484,7 @@ tree->Add("/4B/laugs/data11/r17/period-M/user.gotero.data11_7TeV.00191425.physic
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-M/user.gotero.data11_7TeV.00191373.physics_JetTauEtmiss.merge.NTUP_JETMET.f413_m1019_p766.btag.v1.111106164758/*.root*");
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-M/user.gotero.data11_7TeV.00191376.physics_JetTauEtmiss.merge.NTUP_JETMET.f413_m1019_p766.btag.v1.111106164824/*.root*");
  m_metaDataTree->Add("/4B/laugs/data11/r17/period-M/user.gotero.data11_7TeV.00191425.physics_JetTauEtmiss.merge.NTUP_JETMET.f413_m1019_p766.btag.v1.111106164911/*.root*");
- */
+ 
 
 
  // cout << "Number of events = " << m_metaDataTree->GetEntries() << endl;

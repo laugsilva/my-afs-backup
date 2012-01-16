@@ -156,7 +156,7 @@ void myAnalysis::FillTrees(bool isDATA, bool isMC){
 
    char name[120];
    if(isMC) sprintf(name,"Trees_MC11_b_QCDjetjet_NO_ISO_r17.root");
-   if(isDATA) sprintf(name,"Trees_DATA2011_QCDjetjet_NO_ISO_r17_PeriodGHIroot");
+   if(isDATA) sprintf(name,"Trees_DATA2011_QCDjetjet_NO_ISO_r17_PeriodBtoK.root");
 
   TFile* file = TFile::Open(name,"RECREATE");
 
@@ -169,7 +169,9 @@ void myAnalysis::FillTrees(bool isDATA, bool isMC){
   double _tau1, _tau2, _tauratio, _drktaxis;
   float _weight;
   float _sv0weight;
-  float _ip3dsv1weight;
+  float _ip3dweight;
+  float _sv1weight;
+  float _jetfitcombnnweight;
   float _eta;//_phi;
 
   mytree->Branch("pt",&_pt,"pt/F");
@@ -187,7 +189,9 @@ void myAnalysis::FillTrees(bool isDATA, bool isMC){
   mytree->Branch("nsubjets",&_nsubjets,"nsubjets/I");
   mytree->Branch("weight",&_weight,"weight/F");
   mytree->Branch("sv0weight",&_sv0weight,"sv0weight/F");
-  mytree->Branch("ip3dsv1weight",&_ip3dsv1weight,"ip3dsv1weight/F");
+  mytree->Branch("ip3dweight",&_ip3dweight,"ip3dweight/F");
+  mytree->Branch("sv1weight",&_sv1weight,"sv1weight/F");
+  mytree->Branch("jetfitcombnnweight",&_jetfitcombnnweight,"jetfitcombnnweight/F");
   mytree->Branch("tau1",&_tau1,"tau1/D");
   mytree->Branch("tau2",&_tau1,"tau2/D");
   mytree->Branch("tauratio",&_tauratio,"tauratio/D");
@@ -444,7 +448,9 @@ void myAnalysis::FillTrees(bool isDATA, bool isMC){
       //---------- btag weight cut ----------------------------------------
       // bool isBjet = false;
       float Btag_w = (*jet_AntiKt4TopoEM_flavor_weight_SV0)[i]; 
-      float Btag_combw = (*jet_AntiKt4TopoEM_flavor_weight_SV1)[i]+(*jet_AntiKt4TopoEM_flavor_weight_IP3D)[i]; 
+      float Btag_ip3dw = (*jet_AntiKt4TopoEM_flavor_weight_IP3D)[i]; 
+      float Btag_sv1w = (*jet_AntiKt4TopoEM_flavor_weight_SV1)[i]; 
+      float Btag_jetfitw = (*jet_AntiKt4TopoEM_flavor_weight_JetFitterCOMBNN)[i]; 
       //if(Btag_w<BtagCut)continue;
       if(Btag_w>BtagCut){
 	bjets[nj++]=i; Nbjets++;     
@@ -626,7 +632,9 @@ void myAnalysis::FillTrees(bool isDATA, bool isMC){
       _nsubjets = nsubjets;
       _weight = w;
       _sv0weight = Btag_w;
-      _ip3dsv1weight = Btag_combw;
+      _ip3dweight = Btag_ip3dw;
+      _sv1weight = Btag_sv1w;
+      _jetfitcombnnweight = Btag_jetfitw;
       _tau1 = Nsubjet1;
       _tau2 = Nsubjet2;
       _tauratio = Nsubjet12ratio;
